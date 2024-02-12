@@ -1,0 +1,7 @@
+## Requirements
+
+- mysql-connector-python
+- pandas
+- streamlit
+- plotly
+- Pillow
