@@ -14,6 +14,38 @@ For this project, we'll be utilizing technologies such as
 * mysql-connector-python
 * Streamlit
 * Plotly
+  
+## Guide
+  
+    1. Aggregated - Aggregated values of various payment categories as shown under Categories section
+    2. Map - Total values at the State and District levels.
+    3. Top - Totals of top States / Districts /Pin Codes
+
+## Folder Structure
+
+|data
+  |___ aggregated
+      |___ transactions
+          |___ country
+              |___ india
+                  |___ 2018
+                  |___ 2019
+                  |___ ...
+                  |___ 2023
+                  |___ state 
+                      |___ andaman-&-nicobar-islands
+                          |___2018
+                          |   |___ 1.json
+                          |   |___ 2.json
+                          |   |___ 3.json
+                          |   |___ 4.json
+                          |
+                          |___ 2019
+                              |___ 1.json
+                              |___ 2.json
+                              |___ 3.json
+                              |___ 4.json
+                          |___ ...
 
 ## Domain
 
@@ -34,18 +66,14 @@ The Phonepe Pulse GitHub repository contains a large amount of data related to v
 
 ## Approach
 
-Our approach involves the following steps:
+Approach involves the following steps:
 
 1. **Data Extraction**: Scripting to fetch data from GitHub repository.
 2. **Data Transformation**: Using Python and Pandas for data cleaning and preprocessing.
 3. **Database Insertion**: Utilizing mysql-connector-python to insert data into MySQL.
 4. **Dashboard Creation**: Creating an interactive dashboard using Streamlit and Plotly.
 5. **Data Retrieval**: Fetching data from MySQL using mysql-connector-python.
-6. **Deployment**: Ensuring security, efficiency, and user-friendliness, then deploying the dashboard publicly.
-
-## Results
-
-The result will be a live geo visualization dashboard displaying insights from the Phonepe Pulse GitHub repository. Users can access the dashboard from a web browser and navigate different visualizations and facts. The dashboard will provide valuable insights and information, making it a valuable tool for data analysis and decision-making.
+6. **Deployment**: Ensuring security, efficiency, and user-friendliness, then deploying the dashboard.
 
 ## Dataset
 
