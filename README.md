@@ -8,7 +8,9 @@
 5. [Problem Statement](#problem-statement)
 6. [Solution Steps](#solution-steps)
 7. [Approach](#approach)
-8. [Dataset](#dataset)
+8. [MySQL Connection](#mysql-connection)
+9. [Dataset](#dataset)
+
 
 ## Introduction
 This project aims to create a user-friendly tool for visualizing and exploring data from the Phonepe Pulse GitHub repository. The Phonepe Pulse repository contains a vast amount of data related to various metrics and statistics. The goal here is to extract this data, process it, and visualize it in an interactive and visually appealing manner using Streamlit and Plotly.
@@ -52,6 +54,30 @@ Approach involves the following steps:
 5. **Data Retrieval**: Fetching data from MySQL using mysql-connector-python.
 6. **Deployment**: Ensuring security, efficiency, and user-friendliness, then deploying the dashboard.
 
+
+## MySQL Connection
+
+To establish a connection to the MySQL database, follow these instructions:
+
+1. Open the `mysql_connection.py` file.
+2. Replace `'YOUR_PASSWORD_HERE'` with your actual MySQL password.
+3. Save the changes.
+
+```python
+import mysql.connector
+
+# Establishing a connection to MySQL
+connection = mysql.connector.connect(
+    user='root',          # MySQL username
+    password='YOUR_PASSWORD_HERE',  # <-- Replace 'YOUR_PASSWORD_HERE' with your actual MySQL password
+    host='localhost',     # MySQL server host (replace 'localhost' if your server is hosted elsewhere)
+    database='phonepe_pulse'  # Name of the MySQL database
+)
+
+# Creating a cursor object to execute SQL queries
+cursor = connection.cursor()
+
+```
 ## Dataset
 - Dataset Link: [Data Link](https://github.com/PhonePe/pulse)
 - Inspired From: [PhonePe Pulse](https://www.phonepe.com/pulse/)
