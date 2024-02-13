@@ -11,7 +11,7 @@ from PIL import Image
 connection  = mysql.connector.connect(user='root', 
                                       password='pass', #Enter your password
                                       host='localhost', 
-                                      database="phonepe_pulse")
+                                      database="phonepe_pulse") #Enter your database name
 
 cursor = connection.cursor()
 
