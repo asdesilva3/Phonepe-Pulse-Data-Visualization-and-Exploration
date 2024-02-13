@@ -59,10 +59,6 @@ Approach involves the following steps:
 
 To establish a connection to the MySQL database, follow these instructions:
 
-1. Open the `mysql_connection.py` file.
-2. Replace `'YOUR_PASSWORD_HERE'` with your actual MySQL password.
-3. Save the changes.
-
 ```python
 import mysql.connector
 
