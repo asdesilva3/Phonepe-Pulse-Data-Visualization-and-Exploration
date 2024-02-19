@@ -9,7 +9,7 @@ from PIL import Image
 
 #MySQL connection
 connection  = mysql.connector.connect(user='root', 
-                                      password='pass', #Enter your password
+                                      password='YOUR_PASSWORD', #Enter your password
                                       host='localhost', 
                                       database="phonepe_pulse") #Enter your database name
 
@@ -58,7 +58,7 @@ connection.close()
 
 
 # page configuration
-icon = Image.open(r" #path of your icon ")
+icon = Image.open(r" #path of your icon")
 st.set_page_config(
     page_title="PhonePe Pulse",
     page_icon=icon,
