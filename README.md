@@ -8,8 +8,9 @@
 5. [Problem Statement](#problem-statement)
 6. [Solution Steps](#solution-steps)
 7. [Approach](#approach)
-8. [MySQL Connection](#mysql-connection)
-9. [Dataset](#dataset)
+8. [Workflow](#workflow)
+9. [MySQL Connection](#mysql-connection)
+10. [Dataset](#dataset)
 
 
 ## Introduction
@@ -54,6 +55,9 @@ Approach involves the following steps:
 5. **Data Retrieval**: Fetching data from MySQL using mysql-connector-python.
 6. **Deployment**: Ensuring security, efficiency, and user-friendliness, then deploying the dashboard.
 
+## Workflow
+
+![PhonePe Pulse - Workflow](https://github.com/asdesilva3/Phonepe-Pulse-Data-Visualization-and-Exploration/assets/148002331/36f7ad00-406b-4cae-ad2b-0fe46bb421bd)
 
 ## MySQL Connection
 
