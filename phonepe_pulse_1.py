@@ -16,7 +16,7 @@ connection  = mysql.connector.connect(user='root',
 cursor = connection.cursor()
 
 #Aggregated_transaction
-cursor.execute("select * from aggre_transcation;")
+cursor.execute("select * from aggre_transaction;")
 table1 = cursor.fetchall()
 aggre_transaction = pd.DataFrame(table1,columns = ("State", "Year", "Quarter", 
                                                    "Transaction_Type", "Transaction_Count", "Transaction_Amount"))
@@ -65,7 +65,6 @@ st.set_page_config(
     layout="wide")
 
 st.markdown("# :orange[₹ PhonePe Pulse Analysis (2018-2022)]")
-
 
 c1,c2,c3,c4 = st.columns([6,1,1.4,1.5])
 
