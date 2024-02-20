@@ -842,9 +842,7 @@ def plot_brand(aggre_user, order, n):
     with c3:
         st.write(data_brand_a2)
       
-
 #______________________________________________call_the_def_for_Analysis________________________
-
 
 st.markdown("## :blue[Analysis Using Graphs]")
 st.write("")
@@ -878,6 +876,6 @@ if select == "Top 5 Brands (according to total amount)":
 if select == "Botttom 5 Brands (according to total amount)":
     plot_brand(aggre_user, "Bottom", 5)
 
-
+#___________________________________________________END_________________________
 
 
